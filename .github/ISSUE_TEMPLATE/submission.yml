@@ -1,0 +1,25 @@
+name: Challenge submission
+description: Submit your build for this weekend's ShipIt Sunday challenge
+title: "[Challenge #1] <your game name>"
+labels: ["submission"]
+body:
+  - type: input
+    id: name
+    attributes: {label: Game or app name}
+    validations: {required: true}
+  - type: input
+    id: link
+    attributes: {label: Live link (plays in the browser, no login)}
+    validations: {required: true}
+  - type: input
+    id: tools
+    attributes: {label: AI tools used}
+  - type: textarea
+    id: shot
+    attributes: {label: Screenshot or GIF, description: Drag an image here}
+  - type: textarea
+    id: prompt
+    attributes: {label: Your best prompt}
+  - type: input
+    id: x
+    attributes: {label: Your X handle (optional, so we can tag you)}
